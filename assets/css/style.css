@@ -1,0 +1,105 @@
+:root {
+  --size-avatar: 110px;
+  --bg-color-card: rgb(234, 142, 179);
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+hr {
+  width: 85%;
+  opacity: 35%;
+}
+.cards-container {
+  /* якщо картки різні за висотою */
+  margin: auto;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.user-card {
+  flex: 0 0 calc(4 * var(--size-avatar));
+  padding-top: calc(1.5 * var(--size-avatar));
+  background-color: var(--bg-color-card);
+  text-align: center;
+}
+.user-info {
+  border-left: 3px solid rgb(234, 142, 179);
+  border-right: 3px solid rgb(234, 142, 179);
+  background-color: white;
+}
+.user-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-avatar {
+  width: var(--size-avatar);
+  height: var(--size-avatar);
+  margin-top: calc(-0.5 * var(--size-avatar));
+  margin-bottom: 4%;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(116, 116, 116, 0.5);
+  object-fit: cover;
+  object-position: top;
+}
+.user-name {
+  font-size: 1.2rem;
+  margin-bottom: 7.5px;
+}
+.user-address {
+}
+iconify-icon{
+  margin-bottom: -2px;
+}
+.user-header,
+.container-btn {
+  text-transform: capitalize;
+}
+.container-btn {
+  font-size: 1rem;
+  margin: 28px 0px;
+}
+.container-btn a {
+  border-radius: 4px;
+  padding: 9px;
+
+  color: aliceblue;
+}
+.btn-follow {
+  background-color: #17a2b8;
+}
+.btn-send {
+  background-color: #ea8eb3;
+}
+.user-description {
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  line-height: 30px;
+}
+iconify-icon{
+  color: white;
+}
+.social-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 18px 0;
+}
+.social-list > li:not(li:last-child){
+  margin-right: 15px;
+}
